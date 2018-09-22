@@ -13,6 +13,7 @@ gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "page:num"
 exclude: archive_examples
+markdown: kramdown
 
 # About/contact
 author:
