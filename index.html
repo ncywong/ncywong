@@ -1,38 +1,78 @@
----
-layout: default
-title: Home
----
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}/{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<html>
+  <head>
+  <style>
+      html {
+        font-family: Times;
+      }
+      img {
+          float: left;
+          border-radius: 8px;
+          }
+      div {
+          padding: 8px;
+      }
+      .clearfix {
+          overflow: auto;
+      }
+      p.normal {
+      font-weight: normal;
+      }
+      p.light {
+      font-weight: lighter;
+      }
+      p.thick {
+      font-weight: bold;
+      }
+      p.thicker {
+      font-weight: 900;
+      }
+      body {background-color: white;
+            color: black;}
+  </style>
+  <title> Chun Yui (Nicholas) Wong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+  <br>
+  <div class="w3-container">
+      
+  
+  <h4> Chun Yui (Nicholas) Wong </h4>
+  <img src="0.jpeg" alt="face"> <br clear="all" />
+  <br clear="all" />
+  PhD Candidate in Computational Design, Department of Engineering, University of Cambridge <br>
+  Email: cyw(4*7) @ cam.ac.uk (Evaluate the expression inside and remove the parentheses) <br>
+  <a href="main.pdf">CV</a>
+  
+  <h4>Research interests</h4>
+  <ul>
+    <li>Data-centric approximation techniques for high-dimensional engineering models</li>
+    <li>Uncertainty quantification with polynomial chaos</li>
+    <li>Robust design of turbomachinery components and manufacture</li>
+  </ul>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+  <h4>Publications and Pre-prints</h4>
+  <ul>
+      <li>Embedded Ridge Approximations <a href="https://arxiv.org/abs/1907.07037">ArXiv</a></li>
+      <li>Extremum sensitivity analysis with polynomial ridges <a href="https://arxiv.org/abs/1907.08113">ArXiv</a></li>
+  </ul>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+  <h4>Software Development Work</h4>
+  I am a software developer at <a href="https://www.effective-quadratures.org/">Effective Quadratures</a>, an open-source Python
+  package for rapid computational studies including machine learning, uncertainty quantification and dimension reduction 
+  (among many other features). I specialize in  sparse regression, compressed sensing and dimension reduction.
+  
+  <h4>Teaching @ Cambridge Engineering</h4>
+  <ul>
+      <li>3M1 Mathematical Methods</li> 
+      <li>2P7 Vector Calculus and PDEs</li>
+      <li>1P1 Mechanical Vibrations</li>
+  </ul>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
-
+  <h4>Other Interests</h4>
+  <ul>
+      <li><a href="https://cucos.soc.srcf.net/wordpress/">Cambridge University Chinese Orchestra Society</a></li> 
+      <li><a href="http://www.g6uw.org/">Cambridge University Wireless Society</a> (Callsign: 20HCN)</li>
+  </ul>
